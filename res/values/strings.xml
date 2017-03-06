@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Football Counter</string>
+    <string name="yellow_card">Yellow Card</string>
+    <string name="yellow_cards_mark">Y</string>
+    <string name="red_card">Red Card</string>
+    <string name="red_cards_mark">R</string>
+    <string name="shot_on_target">Shot on Target</string>
+    <string name="shots_on_target_mark">onT</string>
+    <string name="shot_off_target">Shot off Target</string>
+    <string name="shots_off_target_mark">ofT</string>
+    <string name="switches">Switch</string>
+    <string name="switches_mark">S</string>
+    <string name="goal">Goal!!</string>
+    <string name="goals_mark">G</string>
+    <string name="team_a">Home Team</string>
+    <string name="team_b">Away Team</string>
+    <string name="home_team">""</string>
+    <string name="away_team">""</string>
+    <string name="send">Send</string>
+    <string name="reset">Reset</string>
+    <string name="error_switch">Can not do more than three switches in a game.</string>
+    <string name="error_email_intent">Error passing statistics to email intent</string>
+    <string name="match_statistics">Match Statistics</string>
+    <string name="vs">vs</string>
+    <string name="n_goals">Number of Goals</string>
+    <string name="n_yc">Number of Yellow Cards Given</string>
+    <string name="n_rc">Number of Red Cards Given</string>
+    <string name="n_sont">Shots on Target</string>
+    <string name="n_soft">Shots of Target</string>
+    <string name="n_switches">Number of Switches</string>
+
+</resources>
