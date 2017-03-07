@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * note to self try to create a dynamic display method to replace all redundant method calls
+     * create a better solution for showing the statistics on screen, looks terrible..
+     * Will not use to much time on this app, just submit when its working.
      */
     /**
      * display count goals home team
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayGoalHomeTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_goals_tag_a);
-        String temp = getString(R.string.goals_tag) + " " + String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
 
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayGoalAwayTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_goals_tag_b);
-        String temp = getString(R.string.goals_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayRedCardHomeTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_red_card_tag_a);
-        String temp = getString(R.string.red_card_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayRedCardAwayTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_red_card_tag_b);
-        String temp = getString(R.string.red_card_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -83,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayYellowCardHomeTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_yellow_card_tag_a);
-        String temp = getString(R.string.yellow_card_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -92,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayYellowCardAwayTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_yellow_card_tag_b);
-        String temp = getString(R.string.yellow_card_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -101,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayShotsOnTargetHomeTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_shots_on_target_tag_a);
-        String temp = getString(R.string.shot_on_target_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -110,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayShotsOffTargetAwayTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_shots_off_target_tag_b);
-        String temp = getString(R.string.shot_off_target_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -119,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayShotsOnTargetAwayTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_shots_on_target_tag_b);
-        String temp = getString(R.string.shot_off_target_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -128,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayShotsOffTargetHomeTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_shots_off_target_tag_a);
-        String temp = getString(R.string.shot_off_target_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displaySwitchHomeTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_switch_tag_a);
-        String temp = getString(R.string.switch_tag) + " "+String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
     /**
@@ -146,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displaySwitchAwayTeam(int number) {
         TextView t = (TextView) findViewById(R.id.text_view_switch_tag_b);
-        String temp = getString(R.string.switch_tag) + " " + String.valueOf(number);
+        String temp = String.valueOf(number);
         t.setText(temp);
     }
 

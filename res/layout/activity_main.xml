@@ -37,30 +37,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/text_view_yellow_card_tag_a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/yellow_card_tag"
-                        style="@style/StatisticView" />
-                    <TextView
-                        android:id="@+id/text_view_shots_on_target_tag_a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/shot_on_target_tag"
-                        style="@style/StatisticView" />
                     <TextView
                         android:id="@+id/text_view_goals_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/goals_tag"
                         style="@style/StatisticView" />
-                </LinearLayout>
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
                     <TextView
                         android:id="@+id/text_view_red_card_tag_a"
                         android:layout_width="wrap_content"
@@ -68,11 +50,30 @@
                         android:text="@string/red_card_tag"
                         style="@style/StatisticView" />
                     <TextView
+                        android:id="@+id/text_view_yellow_card_tag_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yellow_card_tag"
+                        style="@style/StatisticView" />
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
                         android:id="@+id/text_view_shots_off_target_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/shot_off_target_tag"
                         style="@style/StatisticView" />
+                    <TextView
+                        android:id="@+id/text_view_shots_on_target_tag_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shot_on_target_tag"
+                        style="@style/StatisticView" />
+
                     <TextView
                         android:id="@+id/text_view_switch_tag_a"
                         android:layout_width="wrap_content"
@@ -84,50 +85,38 @@
 
                 <Button
                     android:id="@+id/button_goal_a"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/goal"
-                    android:layout_gravity="center"
                     android:onClick="goalA"
                     />
                 <Button
                     android:id="@+id/button_red_card_a"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/red_card"
-                    android:layout_gravity="center"
                     android:onClick="redCardA"
                     />
                 <Button
                     android:id="@+id/button_yellow_card_a"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/yellow_card"
-                    android:layout_gravity="center"
                     android:onClick="yellowCardA"
                     />
                 <Button
                     android:id="@+id/button_shots_off_target_a"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/shots_off_target"
-                    android:layout_gravity="center"
                     android:onClick="shotsOffTargetA"
                     />
                 <Button
                     android:id="@+id/button_shots_on_target_a"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/shots_on_target"
-                    android:layout_gravity="center"
                     android:onClick="shotsOnTargetA"
                     />
                 <Button
                     android:id="@+id/button_switch_a"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/change"
-                    android:layout_gravity="center"
                     android:onClick="switchA"
                     />
             </LinearLayout>
@@ -153,30 +142,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/text_view_yellow_card_tag_b"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/yellow_card_tag"
-                        style="@style/StatisticView" />
-                    <TextView
-                        android:id="@+id/text_view_shots_on_target_tag_b"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/shot_on_target_tag"
-                        style="@style/StatisticView" />
                     <TextView
                         android:id="@+id/text_view_goals_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/goals_tag"
                         style="@style/StatisticView" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
                     <TextView
                         android:id="@+id/text_view_red_card_tag_b"
                         android:layout_width="wrap_content"
@@ -184,10 +155,27 @@
                         android:text="@string/red_card_tag"
                         style="@style/StatisticView" />
                     <TextView
+                        android:id="@+id/text_view_yellow_card_tag_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yellow_card_tag"
+                        style="@style/StatisticView" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
                         android:id="@+id/text_view_shots_off_target_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/shot_off_target_tag"
+                        style="@style/StatisticView" />
+                    <TextView
+                        android:id="@+id/text_view_shots_on_target_tag_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shot_on_target_tag"
                         style="@style/StatisticView" />
                     <TextView
                         android:id="@+id/text_view_switch_tag_b"
@@ -198,50 +186,38 @@
                 </LinearLayout>
                 <Button
                     android:id="@+id/button_goal_b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/goal"
-                    android:layout_gravity="center"
                     android:onClick="goalB"
                     />
                 <Button
                     android:id="@+id/button_red_card_b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/red_card"
-                    android:layout_gravity="center"
                     android:onClick="redCardB"
                     />
                 <Button
                     android:id="@+id/button_yellow_card_b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/yellow_card"
-                    android:layout_gravity="center"
                     android:onClick="yellowCardB"
                     />
                 <Button
                     android:id="@+id/button_shots_off_target_b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/shots_off_target"
-                    android:layout_gravity="center"
                     android:onClick="shotsOffTargetB"
                     />
                 <Button
                     android:id="@+id/button_shots_on_target_b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/shots_on_target"
-                    android:layout_gravity="center"
                     android:onClick="shotsOnTargetB"
                     />
                 <Button
                     android:id="@+id/button_switch_b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:text="@string/change"
-                    android:layout_gravity="center"
                     android:onClick="switchB"
                     />
             </LinearLayout>
@@ -252,18 +228,14 @@
             android:layout_weight="1"/>
         <Button
             android:id="@+id/button_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
             android:text="@string/send"
-            android:layout_gravity="center"
             android:onClick="sendEmail"/>
 
         <Button
             android:id="@+id/button_reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
             android:text="@string/reset"
-            android:layout_gravity="center"
             android:onClick="reset"/>
     </LinearLayout>
 </ScrollView>

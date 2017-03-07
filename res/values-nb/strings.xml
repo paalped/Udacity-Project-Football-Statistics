@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Football Statistikk Teller</string>
+    <string name="and">og</string>
+    <string name="away_team">Borte lag</string>
+    <string name="between">mellom</string>
+    <string name="change">Bytte</string>
+    <string name="error_email_intent">feil ved sending av statistikk til epost klient</string>
+    <string name="error_switch">Kan ikke gjøre mer enn tre bytter i en kamp</string>
+    <string name="goal">Mål</string>
+    <string name="goals_tag">M</string>
+    <string name="home_team">Hjemme lag</string>
+    <string name="match_statistics">Kamp Statistikk</string>
+    <string name="number_of_goals">Antall mål</string>
+    <string name="number_of_red_cards">Antall røde kort</string>
+    <string name="number_of_shots_off_target">Antall skudd utenfor mål</string>
+    <string name="number_of_shots_on_target">Antall skudd på mål</string>
+    <string name="number_of_switch">Antall bytter</string>
+    <string name="number_of_yellow_cards">Antall gule kort</string>
+    <string name="red_card">Rødt kort</string>
+    <string name="red_card_tag">R</string>
+    <string name="reset">Reset</string>
+    <string name="send">Send</string>
+    <string name="shot_off_target_tag">U</string>
+    <string name="shot_on_target_tag">T</string>
+    <string name="shots_off_target">Skudd utenfor</string>
+    <string name="shots_on_target">Skudd på mål</string>
+    <string name="switch_tag">B</string>
+    <string name="yellow_card">Gult kort</string>
+    <string name="yellow_card_tag">G</string>
+</resources>
