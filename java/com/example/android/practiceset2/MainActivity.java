@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static android.R.id.message;
-import static com.example.android.practiceset2.R.string.error_email_intent;
-import static com.example.android.practiceset2.R.string.switches;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,246 +24,246 @@ public class MainActivity extends AppCompatActivity {
      * global int variables to store all counters,
      * maybe better to create a dictionary
      */
-    int goals_a = 0;
-    int goals_b = 0;
-    int redCard_a = 0;
-    int redCard_b = 0;
-    int yellowCard_a = 0;
-    int yellowCard_b = 0;
-    int shotsOnTarget_a = 0;
-    int shotsOnTarget_b = 0;
-    int shotsOffTarget_a = 0;
-    int shotsOffTarget_b = 0;
-    int switches_a = 0;
-    int switches_b = 0;
+    int homeGoal = 0;
+    int awayGoal = 0;
+    int redCardHomeTeam = 0;
+    int redCardAwayTeam = 0;
+    int yellowCardHomeTeam = 0;
+    int yellowCardAwayTeam = 0;
+    int shotsOnTargetHomeTeam = 0;
+    int shotsOnTargetAwayTeam = 0;
+    int shotsOffTargetHomeTeam = 0;
+    int shotsOffTargetAwayTeam = 0;
+    int switchesHomeTeam = 0;
+    int switchesAwayTeam = 0;
 
     /**
      * note to self try to create a dynamic display method to replace all redundant method calls
      */
     /**
      * display count goals home team
-     * @param text
+     * @param number of goals home team
      */
-    public void display_goal_a(int text) {
-        TextView t = (TextView) findViewById(R.id.goals_mark_a);
-        String temp = getString(R.string.goals_mark) + " " + String.valueOf(text);
+    public void displayGoalHomeTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_goals_tag_a);
+        String temp = getString(R.string.goals_tag) + " " + String.valueOf(number);
         t.setText(temp);
     }
 
     /**
      * display count goals away team
-     * @param text
+     * @param number of goals away team
      */
-    public void display_goal_b(int text) {
-        TextView t = (TextView) findViewById(R.id.goals_mark_b);
-        String temp = getString(R.string.goals_mark) + " "+String.valueOf(text);
+    public void displayGoalAwayTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_goals_tag_b);
+        String temp = getString(R.string.goals_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count red cards home team
-     * @param text
+     * @param number of red cards home team
      */
-    public void display_rc_a(int text) {
-        TextView t = (TextView) findViewById(R.id.red_card_mark_a);
-        String temp = getString(R.string.red_cards_mark) + " "+String.valueOf(text);
+    public void displayRedCardHomeTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_red_card_tag_a);
+        String temp = getString(R.string.red_card_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count red cards away team
-     * @param text
+     * @param number of red cards away team
      */
-    public void display_rc_b(int text) {
-        TextView t = (TextView) findViewById(R.id.red_card_mark_b);
-        String temp = getString(R.string.red_cards_mark) + " "+String.valueOf(text);
+    public void displayRedCardAwayTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_red_card_tag_b);
+        String temp = getString(R.string.red_card_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count yellow cards home team
-     * @param text
+     * @param number of yellow cards home team
      */
-    public void display_yc_a(int text) {
-        TextView t = (TextView) findViewById(R.id.yellow_card_mark_a);
-        String temp = getString(R.string.yellow_cards_mark) + " "+String.valueOf(text);
+    public void displayYellowCardHomeTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_yellow_card_tag_a);
+        String temp = getString(R.string.yellow_card_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count yellow cards away team
-     * @param text
+     * @param number of yellow cards away team
      */
-    public void display_yc_b(int text) {
-        TextView t = (TextView) findViewById(R.id.yellow_card_mark_b);
-        String temp = getString(R.string.yellow_cards_mark) + " "+String.valueOf(text);
+    public void displayYellowCardAwayTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_yellow_card_tag_b);
+        String temp = getString(R.string.yellow_card_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count shots on target home team
-     * @param text
+     * @param number of shots on target home team
      */
-    public void display_sont_a(int text) {
-        TextView t = (TextView) findViewById(R.id.shots_on_target_mark_a);
-        String temp = getString(R.string.shots_on_target_mark) + " "+String.valueOf(text);
+    public void displayShotsOnTargetHomeTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_shots_on_target_tag_a);
+        String temp = getString(R.string.shot_on_target_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count shots off target away team
-     * @param text
+     * @param number of shots off target away team
      */
-    public void display_soft_b(int text) {
-        TextView t = (TextView) findViewById(R.id.shots_off_target_mark_b);
-        String temp = getString(R.string.shots_off_target_mark) + " "+String.valueOf(text);
+    public void displayShotsOffTargetAwayTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_shots_off_target_tag_b);
+        String temp = getString(R.string.shot_off_target_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count shots on target away team
-     * @param text
+     * @param number of shots on target away team
      */
-    public void display_sont_b(int text) {
-        TextView t = (TextView) findViewById(R.id.shots_on_target_mark_b);
-        String temp = getString(R.string.shots_on_target_mark) + " "+String.valueOf(text);
+    public void displayShotsOnTargetAwayTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_shots_on_target_tag_b);
+        String temp = getString(R.string.shot_off_target_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count shots off target home team
-     * @param text
+     * @param number of shots off target home team
      */
-    public void display_soft_a(int text) {
-        TextView t = (TextView) findViewById(R.id.shots_off_target_mark_a);
-        String temp = getString(R.string.shots_off_target_mark) + " "+String.valueOf(text);
+    public void displayShotsOffTargetHomeTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_shots_off_target_tag_a);
+        String temp = getString(R.string.shot_off_target_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count switches made home team
-     * @param text
+     * @param number of switches made by home team
      */
-    public void display_sw_a(int text) {
-        TextView t = (TextView) findViewById(R.id.switch_mark_a);
-        String temp = getString(R.string.switches_mark) + " "+String.valueOf(text);
+    public void displaySwitchHomeTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_switch_tag_a);
+        String temp = getString(R.string.switch_tag) + " "+String.valueOf(number);
         t.setText(temp);
     }
     /**
      * display count switches made away team
-     * @param text
+     * @param number of switches made by away team
      */
-    public void display_sw_b(int text) {
-        TextView t = (TextView) findViewById(R.id.switch_mark_b);
-        String temp = getString(R.string.switches_mark) + " " + String.valueOf(text);
+    public void displaySwitchAwayTeam(int number) {
+        TextView t = (TextView) findViewById(R.id.text_view_switch_tag_b);
+        String temp = getString(R.string.switch_tag) + " " + String.valueOf(number);
         t.setText(temp);
     }
 
     /**
      * method to count goals scored by home team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void goalA(View v){
-        goals_a += 1;
-        display_goal_a(goals_a);
+        homeGoal += 1;
+        displayGoalHomeTeam(homeGoal);
     }
     /**
      * method to count red cards given to home team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void redCardA(View v){
-        redCard_a += 1;
-        display_rc_a(redCard_a);
+        redCardHomeTeam += 1;
+        displayRedCardHomeTeam(redCardHomeTeam);
     }
     /**
      * method to count yellow cards given to home team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void yellowCardA(View v){
-        yellowCard_a += 1;
-        display_yc_a(yellowCard_a);
+        yellowCardHomeTeam += 1;
+        displayYellowCardHomeTeam(yellowCardHomeTeam);
     }
     /**
      * method to count shots on target for home team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void shotsOnTargetA(View v){
-        shotsOnTarget_a += 1;
-        display_sont_a(shotsOnTarget_a);
+        shotsOnTargetHomeTeam += 1;
+        displayShotsOnTargetHomeTeam(shotsOnTargetHomeTeam);
     }
     /**
      * method to count shots off target for home team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void shotsOffTargetA(View v){
-        shotsOffTarget_a += 1;
-        display_soft_a(shotsOffTarget_a);
+        shotsOffTargetHomeTeam += 1;
+        displayShotsOffTargetHomeTeam(shotsOffTargetHomeTeam);
     }
     /**
      * method to count switches made by home team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void switchA(View v){
-        switches_a += 1;
-        if (switches_a > 3){
+        switchesHomeTeam += 1;
+        if (switchesHomeTeam > 3){
             Toast.makeText(this,getString(R.string.error_switch),Toast.LENGTH_SHORT).show();
-            switches_a = 3;
+            switchesHomeTeam = 3;
         }
-        display_sw_a(switches_a);
+        displaySwitchHomeTeam(switchesHomeTeam);
     }
 
     /**
      * method to count goals scored by away team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void goalB(View v){
-        goals_b += 1;
-        display_goal_b(goals_b);
+        awayGoal += 1;
+        displayGoalAwayTeam(awayGoal);
     }
     /**
      * method to count red cards given to away team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void redCardB(View v){
-        redCard_b += 1;
-        display_rc_b(redCard_b);
+        redCardAwayTeam += 1;
+        displayRedCardAwayTeam(redCardAwayTeam);
     }
     /**
      * method to count yellow cards given to away team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void yellowCardB(View v){
-        yellowCard_b += 1;
-        display_yc_b(yellowCard_b);
+        yellowCardAwayTeam += 1;
+        displayYellowCardAwayTeam(yellowCardAwayTeam);
 
     }
     /**
      * method to count shots on target for away team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void shotsOnTargetB(View v){
-        shotsOnTarget_b += 1;
-        display_sont_b(shotsOnTarget_b);
+        shotsOnTargetAwayTeam += 1;
+        displayShotsOnTargetAwayTeam(shotsOnTargetAwayTeam);
 
     }
     /**
      * method to count shots off target for away team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void shotsOffTargetB(View v){
-        shotsOffTarget_b += 1;
-        display_soft_b(shotsOffTarget_b);
+        shotsOffTargetAwayTeam += 1;
+        displayShotsOffTargetAwayTeam(shotsOffTargetAwayTeam);
 
     }
     /**
      * method to count switches made by away team
-     * @param v
+     * @param v is the View, important else app will crash
      */
     public void switchB(View v) {
-        switches_b += 1;
-        if (switches_b > 3){
+        switchesAwayTeam += 1;
+        if (switchesAwayTeam > 3){
             Toast.makeText(this,getString(R.string.error_switch),Toast.LENGTH_SHORT).show();
-            switches_b = 3;
+            switchesAwayTeam = 3;
         }
-        display_sw_b(switches_b);
+        displaySwitchAwayTeam(switchesAwayTeam);
     }
     /**
      * This method returns the home team in a String
      */
 
     private String inputHomeTeam(){
-        EditText nameInput = (EditText) findViewById(R.id.input_home_team);
+        EditText nameInput = (EditText) findViewById(R.id.edit_text_input_home_team);
         return nameInput.getText().toString();
     }
     /**
@@ -274,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private String inputAwayTeam(){
-        EditText nameInput = (EditText) findViewById(R.id.input_away_team);
+        EditText nameInput = (EditText) findViewById(R.id.edit_text_input_away_team);
         return nameInput.getText().toString();
     }
 
@@ -301,27 +298,26 @@ public class MainActivity extends AppCompatActivity {
      */
     private String createStatisticsMessage(){
         String emailMessage;
-        emailMessage = getString(R.string.match_statistics) + " " + inputHomeTeam()+ " " + getString(R.string.vs)+ " " + inputAwayTeam();
-        emailMessage += "\n";
-        emailMessage += getString(R.string.team_a)+"\n";
+        emailMessage = "\n";
         emailMessage += getString(R.string.home_team)+"\n";
-        emailMessage += getString(R.string.n_goals) + " " + goals_a + "\n";
-        emailMessage += getString(R.string.n_sont) + " " + shotsOnTarget_a + "\n";
-        emailMessage += getString(R.string.n_soft) + " " + shotsOffTarget_a + "\n";
-        emailMessage += getString(R.string.n_yc) + " " + yellowCard_a + "\n";
-        emailMessage += getString(R.string.n_rc) + " " + redCard_a + "\n";
-        emailMessage += getString(R.string.n_switches) + " " + switches_a + "\n";
+        emailMessage += "\n";
+        emailMessage += getString(R.string.number_of_goals) + " " + homeGoal + "\n";
+        emailMessage += getString(R.string.number_of_shots_on_target) + " " + shotsOnTargetHomeTeam + "\n";
+        emailMessage += getString(R.string.number_of_shots_off_target) + " " + shotsOffTargetHomeTeam + "\n";
+        emailMessage += getString(R.string.number_of_yellow_cards) + " " + yellowCardHomeTeam + "\n";
+        emailMessage += getString(R.string.number_of_red_cards) + " " + redCardHomeTeam + "\n";
+        emailMessage += getString(R.string.number_of_switch) + " " + switchesHomeTeam + "\n";
 
         emailMessage += "\n";
 
-        emailMessage += getString(R.string.team_b)+"\n";
         emailMessage += getString(R.string.away_team)+"\n";
-        emailMessage += getString(R.string.n_goals) + " " + goals_b + "\n";
-        emailMessage += getString(R.string.n_sont) + " " + shotsOnTarget_b + "\n";
-        emailMessage += getString(R.string.n_soft) + " " + shotsOffTarget_b + "\n";
-        emailMessage += getString(R.string.n_yc) + " " + yellowCard_b + "\n";
-        emailMessage += getString(R.string.n_rc) + " " + redCard_b + "\n";
-        emailMessage += getString(R.string.n_switches) + " " + switches_b + "\n";
+        emailMessage += "\n";
+        emailMessage += getString(R.string.number_of_goals) + " " + awayGoal + "\n";
+        emailMessage += getString(R.string.number_of_shots_on_target) + " " + shotsOnTargetAwayTeam + "\n";
+        emailMessage += getString(R.string.number_of_shots_off_target) + " " + shotsOffTargetAwayTeam + "\n";
+        emailMessage += getString(R.string.number_of_yellow_cards) + " " + yellowCardAwayTeam + "\n";
+        emailMessage += getString(R.string.number_of_red_cards) + " " + redCardAwayTeam + "\n";
+        emailMessage += getString(R.string.number_of_switch) + " " + switchesAwayTeam + "\n";
         return emailMessage;
     }
 
@@ -331,7 +327,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void sendEmail(View view){
         String emailSubject;
-        emailSubject = getString(R.string.match_statistics) + " " + inputHomeTeam()+ " " + getString(R.string.vs)+ " " + inputAwayTeam();
+        emailSubject = getString(R.string.match_statistics)+ " " + getString(R.string.between)+ " " + inputHomeTeam()+ " " + getString(R.string.and)+ " " + inputAwayTeam();
         composeEmail(emailSubject,createStatisticsMessage());
 
     }
@@ -340,30 +336,30 @@ public class MainActivity extends AppCompatActivity {
      * method to reset all counters
      */
     public void reset(View v){
-        goals_a = 0;
-        goals_b = 0;
-        redCard_a = 0;
-        redCard_b = 0;
-        yellowCard_a = 0;
-        yellowCard_b = 0;
-        shotsOnTarget_a = 0;
-        shotsOnTarget_b = 0;
-        shotsOffTarget_a = 0;
-        shotsOffTarget_b = 0;
-        switches_a = 0;
-        switches_b = 0;
-        display_goal_a(goals_a);
-        display_rc_a(redCard_a);
-        display_yc_a(yellowCard_a);
-        display_sont_a(shotsOnTarget_a);
-        display_soft_a(shotsOffTarget_a);
-        display_sw_a(switches_a);
-        display_goal_b(goals_b);
-        display_rc_b(redCard_b);
-        display_yc_b(yellowCard_b);
-        display_sont_b(shotsOnTarget_b);
-        display_soft_b(shotsOffTarget_b);
-        display_sw_b(switches_b);
+        homeGoal = 0;
+        awayGoal = 0;
+        redCardHomeTeam = 0;
+        redCardAwayTeam = 0;
+        yellowCardHomeTeam = 0;
+        yellowCardAwayTeam = 0;
+        shotsOnTargetHomeTeam = 0;
+        shotsOnTargetAwayTeam = 0;
+        shotsOffTargetHomeTeam = 0;
+        shotsOffTargetAwayTeam = 0;
+        switchesHomeTeam = 0;
+        switchesAwayTeam = 0;
+        displayGoalHomeTeam(homeGoal);
+        displayRedCardHomeTeam(redCardHomeTeam);
+        displayYellowCardHomeTeam(yellowCardHomeTeam);
+        displayShotsOnTargetHomeTeam(shotsOnTargetHomeTeam);
+        displayShotsOffTargetHomeTeam(shotsOffTargetHomeTeam);
+        displaySwitchHomeTeam(switchesHomeTeam);
+        displayGoalAwayTeam(awayGoal);
+        displayRedCardAwayTeam(redCardAwayTeam);
+        displayYellowCardAwayTeam(yellowCardAwayTeam);
+        displayShotsOnTargetAwayTeam(shotsOnTargetAwayTeam);
+        displayShotsOffTargetAwayTeam(shotsOffTargetAwayTeam);
+        displaySwitchAwayTeam(switchesAwayTeam);
     }
 
 }

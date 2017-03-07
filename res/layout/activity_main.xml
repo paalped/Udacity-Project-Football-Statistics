@@ -27,8 +27,8 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="@string/team_a"
-                    android:id="@+id/input_home_team"
+                    android:hint="@string/home_team"
+                    android:id="@+id/edit_text_input_home_team"
                     android:inputType="textCapWords"
                     android:layout_gravity="center"
                     android:textSize="16sp"/>
@@ -39,22 +39,22 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/yellow_card_mark_a"
+                        android:id="@+id/text_view_yellow_card_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/yellow_cards_mark"
+                        android:text="@string/yellow_card_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/shots_on_target_mark_a"
+                        android:id="@+id/text_view_shots_on_target_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/shots_on_target_mark"
+                        android:text="@string/shot_on_target_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/goals_mark_a"
+                        android:id="@+id/text_view_goals_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/goals_mark"
+                        android:text="@string/goals_tag"
                         style="@style/StatisticView" />
                 </LinearLayout>
                 <LinearLayout
@@ -62,28 +62,28 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/red_card_mark_a"
+                        android:id="@+id/text_view_red_card_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/red_cards_mark"
+                        android:text="@string/red_card_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/shots_off_target_mark_a"
+                        android:id="@+id/text_view_shots_off_target_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/shots_off_target_mark"
+                        android:text="@string/shot_off_target_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/switch_mark_a"
+                        android:id="@+id/text_view_switch_tag_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/switches_mark"
+                        android:text="@string/switch_tag"
                         style="@style/StatisticView" />
                 </LinearLayout>
 
 
                 <Button
-                    android:id="@+id/goal_a"
+                    android:id="@+id/button_goal_a"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/goal"
@@ -91,7 +91,7 @@
                     android:onClick="goalA"
                     />
                 <Button
-                    android:id="@+id/red_card_a"
+                    android:id="@+id/button_red_card_a"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/red_card"
@@ -99,7 +99,7 @@
                     android:onClick="redCardA"
                     />
                 <Button
-                    android:id="@+id/yellow_card_a"
+                    android:id="@+id/button_yellow_card_a"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/yellow_card"
@@ -107,26 +107,26 @@
                     android:onClick="yellowCardA"
                     />
                 <Button
-                    android:id="@+id/shots_off_target_a"
+                    android:id="@+id/button_shots_off_target_a"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/shot_off_target"
+                    android:text="@string/shots_off_target"
                     android:layout_gravity="center"
                     android:onClick="shotsOffTargetA"
                     />
                 <Button
-                    android:id="@+id/shots_on_target_a"
+                    android:id="@+id/button_shots_on_target_a"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/shot_on_target"
+                    android:text="@string/shots_on_target"
                     android:layout_gravity="center"
                     android:onClick="shotsOnTargetA"
                     />
                 <Button
-                    android:id="@+id/switch_a"
+                    android:id="@+id/button_switch_a"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/switches"
+                    android:text="@string/change"
                     android:layout_gravity="center"
                     android:onClick="switchA"
                     />
@@ -142,10 +142,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <EditText
-                    android:id="@+id/input_away_team"
+                    android:id="@+id/edit_text_input_away_team"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="@string/team_b"
+                    android:hint="@string/away_team"
                     android:inputType="textCapWords"
                     android:layout_gravity="center"
                     android:textSize="16sp"/>
@@ -155,22 +155,22 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/yellow_card_mark_b"
+                        android:id="@+id/text_view_yellow_card_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/yellow_cards_mark"
+                        android:text="@string/yellow_card_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/shots_on_target_mark_b"
+                        android:id="@+id/text_view_shots_on_target_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/shots_on_target_mark"
+                        android:text="@string/shot_on_target_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/goals_mark_b"
+                        android:id="@+id/text_view_goals_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/goals_mark"
+                        android:text="@string/goals_tag"
                         style="@style/StatisticView" />
                 </LinearLayout>
                 <LinearLayout
@@ -178,26 +178,26 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/red_card_mark_b"
+                        android:id="@+id/text_view_red_card_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/red_cards_mark"
+                        android:text="@string/red_card_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/shots_off_target_mark_b"
+                        android:id="@+id/text_view_shots_off_target_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/shots_off_target_mark"
+                        android:text="@string/shot_off_target_tag"
                         style="@style/StatisticView" />
                     <TextView
-                        android:id="@+id/switch_mark_b"
+                        android:id="@+id/text_view_switch_tag_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/switches_mark"
+                        android:text="@string/switch_tag"
                         style="@style/StatisticView" />
                 </LinearLayout>
                 <Button
-                    android:id="@+id/goal_b"
+                    android:id="@+id/button_goal_b"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/goal"
@@ -205,7 +205,7 @@
                     android:onClick="goalB"
                     />
                 <Button
-                    android:id="@+id/red_card_b"
+                    android:id="@+id/button_red_card_b"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/red_card"
@@ -213,7 +213,7 @@
                     android:onClick="redCardB"
                     />
                 <Button
-                    android:id="@+id/yellow_card_b"
+                    android:id="@+id/button_yellow_card_b"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="@string/yellow_card"
@@ -221,26 +221,26 @@
                     android:onClick="yellowCardB"
                     />
                 <Button
-                    android:id="@+id/shots_off_target_b"
+                    android:id="@+id/button_shots_off_target_b"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/shot_off_target"
+                    android:text="@string/shots_off_target"
                     android:layout_gravity="center"
                     android:onClick="shotsOffTargetB"
                     />
                 <Button
-                    android:id="@+id/shots_on_target_b"
+                    android:id="@+id/button_shots_on_target_b"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/shot_on_target"
+                    android:text="@string/shots_on_target"
                     android:layout_gravity="center"
                     android:onClick="shotsOnTargetB"
                     />
                 <Button
-                    android:id="@+id/switch_b"
+                    android:id="@+id/button_switch_b"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/switches"
+                    android:text="@string/change"
                     android:layout_gravity="center"
                     android:onClick="switchB"
                     />
@@ -251,7 +251,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"/>
         <Button
-            android:id="@+id/send_button"
+            android:id="@+id/button_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/send"
@@ -259,7 +259,7 @@
             android:onClick="sendEmail"/>
 
         <Button
-            android:id="@+id/reset_button"
+            android:id="@+id/button_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/reset"

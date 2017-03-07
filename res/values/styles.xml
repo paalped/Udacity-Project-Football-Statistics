@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimary">#CC9800</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#FF9800</item>
+        <item name="colorButtonNormal">#CC9800</item>
         <!-- -->
         <item name="colorPrimaryDark">#DD6500</item>
         <item name="colorAccent">#0098FF</item>
     </style>
     <style name="StatisticView">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:paddingRight">4sp</item>
         <item name="android:paddingLeft">4sp</item>
         <item name="android:layout_weight">1</item>
